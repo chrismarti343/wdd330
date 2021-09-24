@@ -2,24 +2,27 @@ const links = [
     {
       label: "Week1 notes",
       url: "week1/index.html"
+    },
+    {
+      label: "Week2 notes",
+      url: "week2/index.html"
     }
+
 
   ]
 
-let list = document.getElementById("myList");
+  let counter = 1;
 
-links.forEach(function (info) {
+   links.forEach(function (info) {
    
-    //console.log(info.label);
+
+    let link = "link"+counter;
+    console.log(link)
     
-    document.getElementById('link').innerHTML = '<a href="' + info.url + '">'+ info.label +'</a>';
-        
-    //console.log(info.url);
-
-    console.log(a);
-    console.log(li);
-
-
+    document.getElementById(link).innerHTML = '<a href="' + info.url + '">'+ info.label +'</a>';
+    
+    counter++;
+  
 
 
 })
