@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week2</title>
+</head>
+<body>
+    <h1>Week03</h1>
+
+    <ul>
+        <li><h2>Objects</h2></li>
+        <p>They are use to encapsule code that can be reused later in the program. </p>
+        <p>const superman = { <br>
+            name: ‘Superman’,<br>
+            height: 75,<br>
+            fly(){<br>
+            return ‘up up and away;<br>
+            }<br>
+            };<br>
+            
+            fly() property is a method
+        </p>
+
+        <h3>Create a method :</h3>
+        <p>
+            const newObject = {};<br>
+
+            short way of creating objects<br>
+            const ironMan = [name, realName};<br>
+        </p>
+
+        <h3>Create a method :</h3>
+
+        <p>Call an Object method:</p>
+        <p>
+            newObject.fly()<br>
+            << ‘Up up and away’
+        </p>
+
+
+        <h3>Adding Properties:</h3>
+
+        <p>
+            newObject.city = ‘Rexburg’;<br>
+            << ‘Rexburg’
+        </p>
+
+
+        <h3>Removing Properties</h3>
+
+        <p>
+            delete superman.fly <br>
+            << true
+            
+        </p>
+
+        <h3>This Method</h3>
+
+        <p>
+            const rectangule = { <br>
+                side: 6;<br>
+                side2: 3;<br>
+                area(){<br>
+                return Mathfloor(this.side * this side2);<br>
+                }<br>
+                }<br>
+                
+                rectangule.area();<br>
+                << 5<br>
+                
+            
+        </p>
+
+        <li><h2>The Document Object Model</h2></li>
+
+        <p>It allows to get access elements of a web page and also to interact with them.<br>
+ 
+            Get body element of a web page.<br>
+            const body = document.body;</p>
+
+        <p>
+                        <h3>Getting elements by ID</h3>
+
+            const h1 = document.getElementById(‘title’);
+
+            <h3>Getting elements by Tag Name</h3>
+
+            const listItems = document.getElementByTagName(‘li’);
+
+            <h3>Getting elements by Class Name</h3>
+
+            const heroes = document.getElementByClassName(‘hero’); <br>
+
+            <h3>Creating elements and appending</h3>
+
+
+            const heroe = document.createElement(‘li’);<br>
+            fleash.textContent = ‘Flash’;<br>
+            heroes.appendChild(heroe);<br>
+            heroes.insertBefore(auqaman,wonderWoman);
+        </p>
+
+
+
+
+    </ul>
+    
+  
+    
+</body>
+</html>
