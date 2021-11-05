@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 08</title>
+</head>
+<body>
+
+    <h1> Transforms and Transitions </h1>
+
+    <p> 
+        This topic is about changing the appearance of an element.
+        This transition should be  smoothly and gradually.
+    </p>
+
+    <section class ="example1"> 
+        <div class='title'>
+            <h3> Without Transition</h3>
+            <div class="box1 box"></div>
+        </div>
+       
+        <div class ='title'>
+            <h3> With Transition</h3>
+        
+        <div class="box2 box"></div>
+     
+    </div>
+
+   
+
+    </section>
+
+    <ul>
+        <li>
+            <h2>Scale</h2>
+            <p> This allow to increse or decrease the size of 
+                an element
+            </p>
+
+        </li>
+
+        <li>
+            <h2>Rotate</h2>
+            <p> This value allow us to rotate clockwise or 
+                counterclockwise by a number of degrees
+            </p>
+            <p>
+                Example: 90deg <br>
+                1080deg
+            </p>
+
+        </li>
+
+        <div class="example2">
+            <div class="rotate"> </div>
+            </div>
+
+        <li> 
+            <h2> Translate</h2>
+            <p> This value allows to move elements left/right and up/down 
+                The movemente is given for X, Y axes.
+            </p>
+
+            <div class="examp">
+                <div class="square"> </div>
+            </div>
+
+        </li>
+
+    </ul>
+
+    <h1> Canvas, SVG, and Drag and Drop</h1>
+    <p> With this Canvas API we can draw anything we want. This improve helps to avoid
+        to download images off the nerwork
+    </p>
+
+    <div class='canvas'>
+        <canvas id="myCanvas" class="myCanvas" width="200" height="200">
+
+            Sorry! Your browser doesn’t support Canvas.
+            
+            </canvas>
+    </div>
+
+   
+
+
+
+
+    <style>
+
+        .example1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }   
+
+        .box {
+            border-radius: 5px;
+            height: 40px;
+            margin: 50px auto;
+            width: 80px;
+            background: #2b3f53;
+        }
+
+        .box2{
+            transition: all 500ms;
+        }
+
+        .box1:hover{
+            transform: scale(2);
+        }
+
+        .box2:hover{
+            transform: scale(2);
+        }
+
+        h3{
+            text-align: center;
+        }
+
+       .example2{
+           margin: auto;
+           display: flex;
+        justify-content: center;
+       }
+       
+        .rotate {
+            border: none;
+            border-radius: 50%;
+            background: burlywood;
+            height: 100px;
+            width: 50px;
+            margin: 100px;
+            transition: all 3s;
+            transition-timing-function: ease-in-out;
+            
+        }
+
+        .rotate:hover{
+            transform: rotate(1080deg); 
+        }
+
+        .examp{
+            margin: auto;
+            display: flex;
+            justify-content: center;
+         
+        }
+
+        .square {
+
+            background: #2b3f53;
+            border-radius: 3px;
+            height: 150px;
+            margin: 100px;
+            transition: transform 0.8s;
+          
+            width: 150px;
+            margin-bottom: 10%;
+        }
+
+        .square:hover{
+            transform: translate(20px, 20px);
+        }
+
+        .myCanvas {
+
+            border: dotted 2px black;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            
+            }
+
+    </style>
+    <script src="w08.js"></script>
+</body>
+</html>
