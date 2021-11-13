@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 09</title>
+</head>
+<body>
+
+    <h1>Window Object </h1>
+
+    <p> Window Object represents the browser window. In this topic we will start to
+        make things happen on the screen.
+    </p>
+    <p> With Window Objects we will be able to open and close windows in the browser,
+        also we will display alerts, and prompt dialogs
+    </p>
+
+
+
+    <ul>
+        <li>
+            <h3> Opening and Closing Browser windows using javascript </h3>
+
+            <p> The next button will allow us to open a window browser when we click on it </p>
+
+            <form action="null">
+                <input type="button" value="Open Window" onclick="myFunction()" />
+              </form>
+
+            <p> The next button will allow us to close the browser window we just opened</p>
+            <form action="null">
+                <input type="button" value="Close Window" onclick="newWindowObj.close()" />
+              </form>
+
+
+        </li>
+        <li>
+            <h3> Moving and resizing Windows Browser Windows using javascript </h3>
+            <p> The next code will allows to move a browser windows to a especific coordiante on
+                 the screen
+                </p>
+
+                <form action="null">
+                    <input type="button" value="Open Window" onclick="myFunction()" />
+                  </form>
+
+                  <br>
+
+                  <form action="null">
+                    <input type="button" value="Move Window" onclick="myFunction2() " />
+                  </form>
+
+                <h4> Note:</h4><p> Because some security implications you may not be able to move the Window</p>
+                
+                
+        </li>
+
+        <li>
+            <h3>Changing Window Focus</h3>
+
+            <p> When a window is the currently selected window on the screen it is said to have focus. Typically, 
+                clicking with the mouse pointer in a window gives that window focus. With JavaScript it is possible
+                 to programmatically change the focus of a window using the focus() and blur() methods. </p>
+
+
+            <form action="null">
+                <input type="button" value="Blur Window" onclick="myFunction3()" />
+              </form>
+
+              <form action="null">
+                <input type="button" value="Focus Window" onclick="myFunction4()" />
+              </form>
+
+        </li>
+
+        <li>
+            <h3> Alerts </h3>
+            <p> This method displays an alert box with a message. The user is also able to click Ok </p>
+        </li>
+       
+        
+        <button onclick="showAlert()">Show Alert in Window</button>
+
+    </ul>
+
+    <h1>
+        HTML 5 APIs
+    </h1>
+
+    <p> With APIs we can add data tags that are personalized towards a specific website and it's data</p>
+    <p> One of the biggest pros of using APIs is that they allow us for bigger data with minimal transfer and quicker response time</p>
+
+    <ul>
+    <li> <h3>Geolocation API</h3>
+
+
+    <form action="null">
+        <input type="button" value="GET GEOLOCATION" onclick="geolocation()" />
+      </form>
+
+    <p>
+        LATITUDE: <span id="latitude"></span> &deg <br>
+        LONGITUDE <span id="longitude"></span> &deg <br>
+    </p>
+
+</li>
+
+</ul>
+
+
+    <script>
+
+        function myFunction() {
+            newWindowObj = window.open("https://www.youtube.com/", "WindowName", "toolbar=0, menubar=1, innerHeight=200, innerWidth=300");
+
+        }
+
+        function myFunction2()  {
+            newWindowObj.moveTo(500, 100)
+        }
+    
+        function myFunction3() {
+            var newWindowObj = window.open("","", "width=400, height=100");
+            newWindowObj.document.write("<p>A new window!</p>");
+            newWindowObj.blur();
+        }
+
+        function myFunction4() {
+            var newWindowObj = window.open("","", "width=300, height=300");
+            newWindowObj.document.write("<p>A new window!</p>");
+            newWindowObj.focus();
+        }
+
+        function showAlert() {
+           alert("This is an alert");
+        
+        }
+
+        function geolocation(){
+            if ('geolocation' in navigator) {
+                navigator.geolocation.getCurrentPosition(position => {
+                    const lat = position.coords.latitude;
+                    const lon = position.coords.longitude;
+                    document.getElementById('latitude').textContent = lat;
+                    document.getElementById('longitude').textContent = lon;
+
+                })
+            } else {
+                console.log('geolocation not available')
+            }
+
+        }
+
+        
+    
+    </script>
+    
+</body>
+
+</html>
