@@ -1,0 +1,88 @@
+.planet-system{
+    background-image: url("./planets/space.jpg");
+    margin: 0%;
+    padding: 10%;
+    height: 70vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.object{
+    border-radius:50%;
+    position: absolute;
+}
+
+.p-orbit, #m-orbit{
+    border:0.1vmin solid lightgrey;
+    opacity:0.5;
+    background: transparent;
+}
+
+#belt{
+    height:97vmin;
+    width:97vmin;
+    animation: spin 50s infinite linear;
+}
+
+@keyframes spin{
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+
+#m-orbit{
+    height:10vmin;
+    width:10vmin;
+}
+
+.planet,#moon{
+    z-index:100;
+}
+
+#sun{
+    height:12vmin;
+    width:12vmin;
+}
+
+
+#mercury{
+    height:2vmin;
+    width:2vmin;
+}
+
+#venus{
+    height:3vmin;
+    width:3vmin;
+}
+
+#earth{
+    height:4vmin;
+    width:4vmin;
+    box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 55px #00fefe;
+}
+
+#mars{
+    height:3.5vmin;
+    width:3.5vmin;
+}
+
+#jupiter{
+    height:8vmin;
+    width:8vmin;
+}
+
+#saturn{
+    height:12vmin;
+    width:12vmin;
+    border-radius:0%;
+}
+
+#uranus{
+    height:6vmin;
+    width:6vmin;
+}
+
+#neptune{
+    height:5vmin;
+    width:5vmin;
+}

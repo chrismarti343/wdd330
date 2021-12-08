@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link href='style.css' rel='stylesheet'>
+    <link href='style-planets.css' rel='stylesheet'>
+   
+    <title>Document</title>
+
+
+</head>
+<body>
+
+    <div class="planet-system">
+
+    <img class = "object" src='./planets/sun.png' id="sun">
+    <img class = "object planet" src='./planets/mercury.png' id="mercury">
+    <img class = "object planet" src='./planets/venus.png' id="venus">
+    <img class = "object planet" src='./planets/earth.png' id="earth">
+    <img class = "object planet" src='./planets/mars.png' id="mars">
+    <img class = "object planet" src='./planets/jupiter.png' id="jupiter">
+    <img class = "object planet" src='./planets/saturn.png' id="saturn">
+    <img class = "object planet" src='./planets/uranus.png' id="uranus">
+    <img class = "object planet" src='./planets/neptune.png' id="neptune">
+
+    <div class='object p-orbit'></div>
+    <div class='object p-orbit'></div>
+    <div class='object p-orbit'></div>
+    <div class='object p-orbit'></div>
+    <div class='object p-orbit'></div>
+    <div class='object p-orbit'></div>
+    <div class='object p-orbit'></div>
+    <div class='object p-orbit'></div>
+
+    </div> 
+
+    <div class="planetList">
+
+        <!-- <p id="demo"> Mercury </p> -->
+        <button id= "1"> Mercury</button>
+        <button id= "2"> Venus</button>
+        <button id= "3"> Earth</button>
+        <button id= "4"> Mars</button>
+        <button id= "5"> Jupiter</button>
+        <button id= "6"> Saturn</button>
+        <button id= "7"> Uranus</button>
+        <button id= "8"> Neptune</button>
+     
+
+    </div>
+
+    <div class="information-box">
+
+        <div class='image'>
+
+            <img id="image" loading="lazy" width="80%" height="100%">
+        
+        </div>
+
+       
+        <div class='flip-card'>
+
+            <div class='flip-card-inner'>
+            
+                <div class='flip-card-front'>
+                    <h2> Information </h2>
+                </div>
+
+                <div class='flip-card-back'>
+                    <div class="card__content">
+                        <p id="name-planet"></p>
+                        <p id="position"></p>
+                        <p id="velocity"></p>
+                        <p id="distance"></p>
+                    </div>
+                </div>
+
+            </div>
+        
+        </div>
+
+
+        <div class='flip-card'>
+
+            <div class='flip-card-inner2'>
+            
+                <div class='flip-card-front'>
+                    <h2> Description </h2>  
+                </div>
+
+                <div class='flip-card-back'>
+                    <div class="card__content">
+                        <p id="description"></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+<script src='script.js'></script>
+<script src='app.js'></script>
+
+</html>

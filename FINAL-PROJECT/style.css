@@ -1,0 +1,166 @@
+
+body {
+  background-color: black;
+  background-position: center; /* Center the image */
+  background-repeat: repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */   
+}
+
+html, body {
+  min-height: 100%;
+}
+
+
+button{
+    background-color:yellow;
+    border-radius: 10px;
+    padding:5px;
+  }
+  
+  button:hover{background-color:orange;}
+  
+  button:focus{background-color:red;}
+  
+  a {
+    color: orange;
+  }
+  
+  a.button{
+    color:green;
+    text-decoration: none;
+    
+  }
+  
+  a:visited {
+    color: purple;
+  }
+  
+  a:active {
+    color: blue;
+  }
+
+  .planetList{
+    margin:auto 0;
+    width:auto;
+    padding:2%;
+    display:grid;
+    grid-template-columns:auto auto auto auto;
+    grid-gap: 5%;
+    row-gap: 20px;
+
+  }
+
+
+  .information-box {
+    margin:auto 0;
+    width: 100%;
+    display: grid;
+   grid-template-columns: 50% auto;
+   row-gap: 2%;
+
+  }
+
+  #image{
+    margin: auto;
+    width: 100%;
+  }
+
+  .image{
+    grid-row: 1/3
+
+
+  }
+
+
+ 
+  .flip-card {
+    margin: auto 0;
+    margin: auto;
+    background-color: transparent;
+    width: 500px;
+    height: 300px;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+  
+  .flip-card-inner, .flip-card-inner2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.0s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(238, 232, 232, 0.2);
+    border: 5px solid #00fefe;
+    border-radius: 10px;
+
+  }
+
+  
+  .flip-card.is-flipped {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-inner.is-flipped  {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-inner2.is-flipped  {
+    transform: rotateY(180deg);
+  }
+
+
+
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+
+    margin: auto;
+    width: 100%;
+    background-color: transparent;
+    color: White;
+  }
+  
+  .flip-card-back {
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  #description{
+   
+    margin: auto 0;
+    width: auto;
+    height: auto;
+    margin:8%;
+    font-size: 17px;
+  }
+
+  p{
+    
+    margin: auto 0;
+    width: auto;
+    height: auto;
+    margin:5%;
+    font-size: 16px;
+    padding: 2%;
+
+  }
+
+  .card_content{
+    margin: auto 0;
+    width: auto;
+    height: auto;
+    
+  }
