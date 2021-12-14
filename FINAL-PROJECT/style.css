@@ -13,16 +13,19 @@ html, body {
 .dropdownmenu ul .dropdownmenu li {
 	margin: 0;
 	padding: 0;
+  color: white;
 }
 .dropdownmenu ul {
 	background: black ;
 	list-style: none;
 	width: 20%;
+  color: white;
+  
 }
 
 .dropdownmenu a {
 	background: #43aa8b;
-	color: #FFFFFF;
+  color: white;
 	display: block;
 	font: bold 12px/20px sans-serif;
 	padding: 10px 25px;
@@ -37,6 +40,7 @@ html, body {
 }
 .dropdownmenu li:hover a {
 	background: #146390;
+  color: #FFFFFF;
 }
 
 button{
@@ -59,9 +63,6 @@ button{
     
   }
   
-  a:visited {
-    color: purple;
-  }
   
   a:active {
     color: blue;
