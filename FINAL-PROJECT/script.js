@@ -24,12 +24,10 @@ setInterval(()=>{
         p_radians[index] += p_velocities[index] 
     })
 
-    // moon.style.marginLeft = `${earthX() + (Math.cos(m_radians) * m_radius)}vmin`
-    // moon.style.marginTop = `${earthY() + (Math.sin(m_radians) * m_radius)}vmin`
+  
     m_radians += m_velocity 
 
-    // m_orbit.style.marginLeft = `${earthX()}vmin`
-    // m_orbit.style.marginTop = `${earthY()}vmin`
+
 },1000/60)
 
 function earthX(){
