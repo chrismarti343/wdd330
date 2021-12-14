@@ -185,20 +185,13 @@ button{
 
   }
 
-  .card_content{
-    margin: auto 0;
-    width: auto;
-    height: auto;
-    
-  }
-
   .information-box h1{
     color: rgb(78, 71, 71);
     margin-top: 20%;
   }
 
 
-  .information-box:hover h1{
+.information-box:hover h1{
     animation:  shake 0.8s  ;
   }
   
@@ -217,3 +210,12 @@ button{
       transform: translateY(0px);
     }
   }
+
+  .card_content{
+    margin: auto 0;
+    width: auto;
+    height: auto;
+    
+  }
+
+ 
