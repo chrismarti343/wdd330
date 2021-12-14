@@ -4,13 +4,15 @@
 .dropdownmenu ul .dropdownmenu li {
 	margin: 0;
 	padding: 0;
+	width: 10%;
 }
 .dropdownmenu ul {
 	background: #146390 ;
 	list-style: none;
     display: grid;
     grid-template-columns: 1fr 1fr;
-	width: 100%;
+	width: auto;
+	margin: 0;
 }
 .dropdownmenu li {
 	border: 1px #146390 solid;
