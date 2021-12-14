@@ -10,7 +10,7 @@ html, body {
   min-height: 100%;
 }
 
-.dropdownmenu ul, .dropdownmenu li {
+.dropdownmenu ul .dropdownmenu li {
 	margin: 0;
 	padding: 0;
 }
@@ -185,12 +185,31 @@ button{
 
   }
 
-  .information-box h1{
+   .information-box h1{
     color: rgb(78, 71, 71);
     margin-top: 20%;
   }
 
 
+.information-box:hover h1{
+    animation:  shake 0.8s  ;
+  }
+  
+  @keyframes shake{
+    0%{
+      transform: translateY(0)
+    }
+    25%{
+      transform: translateY(25px);
+    }
+      
+    50%{
+      transform: translateY(-25px);
+    }
+    100%{
+      transform: translateY(0px);
+    }
+  }
 
   .card_content{
     margin: auto 0;

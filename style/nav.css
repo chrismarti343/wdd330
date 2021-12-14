@@ -1,7 +1,7 @@
 
 
 
-.dropdownmenu ul, .dropdownmenu li {
+.dropdownmenu ul .dropdownmenu li {
 	margin: 0;
 	padding: 0;
 }
